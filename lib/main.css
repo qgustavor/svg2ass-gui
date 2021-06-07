@@ -1,0 +1,43 @@
+:root {
+  --pm-font-family-primary: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,"Helvetica Neue", sans-serif;
+  --pm-font-family-secondary: var(--pm-font-family-primary);
+  --pm-primary-color: #DF6300;
+  --pm-secondary-color: #0A6DA4;
+  --pm-app-base-font-size: 1rem;
+  --pm-label-margin-bottom: 0;
+  --pm-form-field-margin-bottom: 0;
+}
+
+.app, .pm-ground {
+  margin: 1em 0.5em;
+}
+
+label {
+  margin-left: 1em;
+}
+
+.split {
+  display: grid;
+  grid-column-gap: 1em;
+}
+.s2 { grid-template-columns: repeat(2, 1fr); }
+.s3 { grid-template-columns: repeat(3, 1fr); }
+.s4 { grid-template-columns: repeat(4, 1fr); }
+
+.pull-right {
+  float: right;
+}
+
+.languages img {
+  vertical-align: middle;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+@media (max-width:768px) {
+  .split {
+    display: block
+  }
+}
