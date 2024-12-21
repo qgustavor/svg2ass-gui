@@ -21,6 +21,8 @@ If you wish to translate this tool to your language then fork this repository, c
 
 ## Privacy
 
+This tool was made with one of the goals being making it easier for companies like Crunchyroll to do proper typesetting in their works. As far as I know, it looks like this tool was been used at least once by Crunchyroll staff, but I don't have any official info on that. Anyway, here is some privacy stuff just so enterprise folks can feel more safe that their data are safe with this tool:
+
 Data is converted in browser and is not send to any servers. Application data is fetched from GitHub servers which receive usual request info related to fetching any webpage.
 
 If required this project can be cloned and hosted in any web server. All source-code specific to this project is meant to be safe, respect user privacy and allow to be audited. Both `lib/svg2ass.js` and `lib/svg2ass.wasm` were compiled using Emscripten, so their code are not readable, but those can be still verified by doing the same build steps:
