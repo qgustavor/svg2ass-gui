@@ -21,7 +21,7 @@ If you wish to translate this tool to your language then fork this repository, c
 
 ## Privacy
 
-This tool was made with one of the goals being making it easier for companies like Crunchyroll to do proper typesetting in their works. As far as I know, it looks like this tool was been used at least once by Crunchyroll staff, but I don't have any official info on that. Anyway, here is some privacy stuff just so enterprise folks can feel more safe that their data are safe with this tool:
+This tool was made with one of the goals being making it easier for companies like Crunchyroll to do proper typesetting in their works. As far as I know, it looks like this tool was been used at least once by Crunchyroll staff, but I don't have any official info on that. Anyway, here is some privacy stuff just so enterprise folks can feel more safe knowing that their precious NDA-protected data is safe with this tool:
 
 Data is converted in browser and is not send to any servers. Application data is fetched from GitHub servers which receive usual request info related to fetching any webpage.
 
@@ -29,8 +29,10 @@ If required this project can be cloned and hosted in any web server. All source-
 
 1. Install make (if it's not already installed);
 1. Install [Emscripten](https://emscripten.org/);
-1. Clone [irrwahn/svg2ass](https://github.com/irrwahn/svg2ass);
+1. Clone [qgustavor/svg2ass](https://github.com/qgustavor/svg2ass);
 1. Replace the contents of `Makefile` with those of `lib/Makefile`;
 1. Run `make`.
+
+The qgustavor's fork of svg2ass is used as it adds support to short form hex colors and alpha (colors with alpha are parsed, but, at the moment, the alpha is ignored), which fixes an issue which was reported by one user of this tool.
 
 Flags, used to identify languages, come from [catamphetamine/country-flag-icons](https://github.com/catamphetamine/country-flag-icons/) and are also loaded from GitHub servers. Those are released under [MIT License](https://github.com/catamphetamine/country-flag-icons/blob/d9bdf1180eb5c50ad5ebd6514f19c84857ba55f6/LICENSE).
